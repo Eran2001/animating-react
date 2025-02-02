@@ -45,6 +45,12 @@ const App = () => {
     >
       <animated.h1 style={{ ...fade }}>Hello</animated.h1>
       <animated.h2 style={{ ...lateFade, ...styles }}>World</animated.h2>
+      <div className="main-container">
+        <div className="header">1</div>
+        <div className="aside">2</div>
+        <div className="main">3</div>
+        <div className="footer">4</div>
+      </div>
     </animated.div>
   );
 };

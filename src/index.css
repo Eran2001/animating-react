@@ -7,3 +7,47 @@
 html, body {
   overflow-x: hidden;
 }
+
+.main-container {
+  display: grid;
+  grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    "footer footer footer footer"
+  ;
+  grid-template-columns: auto, 3fr;
+  grid-template-rows: auto 2fr auto;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+  min-height: 100vh;
+} 
+
+.main-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  border: 1px solid #FFF;
+}
+
+.aside {
+  grid-area: aside;
+  border: 1px solid #FFF;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  border: 1px solid #FFF;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  border: 1px solid #FFF;
+  text-align: center;
+}
