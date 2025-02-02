@@ -13,6 +13,15 @@ const App = () => {
     delay: 1000,
   });
 
+  const div = useSpring({
+    from: {
+      opacity: 0,
+    },
+    opacity: 1,
+    loop: true,
+    delay: 1500,
+  });
+
   const lateFade = useSpring({
     from: {
       x: -100,
@@ -26,12 +35,17 @@ const App = () => {
   const styles = useSpring({
     marginTop: "-0.5rem",
   });
-
   return (
-    <div>
+    <animated.div
+      style={{
+        ...div,
+        minHeight: "100vh",
+        backgroundColor: "#ff6d8d",
+      }}
+    >
       <animated.h1 style={{ ...fade }}>Hello</animated.h1>
       <animated.h2 style={{ ...lateFade, ...styles }}>World</animated.h2>
-    </div>
+    </animated.div>
   );
 };
 
