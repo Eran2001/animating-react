@@ -26,28 +26,22 @@ html, body {
 .main-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
+  text-align: center;
+  border: 1px solid #FFF;
 }
 
 .header {
   grid-area: header;
-  text-align: center;
-  border: 1px solid #FFF;
 }
 
 .aside {
   grid-area: aside;
-  border: 1px solid #FFF;
-  text-align: center;
 }
 
 .main {
   grid-area: main;
-  border: 1px solid #FFF;
-  text-align: center;
 }
 
 .footer {
   grid-area: footer;
-  border: 1px solid #FFF;
-  text-align: center;
 }
